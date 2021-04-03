@@ -1,0 +1,6 @@
+framework module Pods_ApotechCare {
+  umbrella header "Pods-ApotechCare-umbrella.h"
+
+  export *
+  module * { export * }
+}
