@@ -8,7 +8,7 @@
 
 import UIKit
 
-class VitaminCell: UICollectionViewCell {
+class CategoryCell: UICollectionViewCell {
 
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var vitaminLabel: UILabel!

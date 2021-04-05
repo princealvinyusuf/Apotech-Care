@@ -16,7 +16,7 @@
 		95D48FD4D8268B2196800CF8 /* Pods_ApotechCare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59A1EBD37911EB3CD2D7094C /* Pods_ApotechCare.framework */; };
 		9F0164BB2617DCD200D58176 /* MedicineObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0164BA2617DCD200D58176 /* MedicineObject.swift */; };
 		9F064D8D261811810054F932 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F064D8C261811810054F932 /* CategoryViewController.swift */; };
-		9F064D912618119F0054F932 /* VitaminCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F064D902618119F0054F932 /* VitaminCell.swift */; };
+		9F064D912618119F0054F932 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F064D902618119F0054F932 /* CategoryCell.swift */; };
 		9F5E57EE2615BADF00767819 /* MedicineModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5E57ED2615BADF00767819 /* MedicineModel.swift */; };
 		9F5E57F12615BB2100767819 /* Medicine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5E57F02615BB2100767819 /* Medicine.swift */; };
 		9F5E57F42615C2E500767819 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5E57F32615C2E500767819 /* Category.swift */; };
@@ -46,7 +46,7 @@
 		59A1EBD37911EB3CD2D7094C /* Pods_ApotechCare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ApotechCare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F0164BA2617DCD200D58176 /* MedicineObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineObject.swift; sourceTree = "<group>"; };
 		9F064D8C261811810054F932 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
-		9F064D902618119F0054F932 /* VitaminCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VitaminCell.swift; sourceTree = "<group>"; };
+		9F064D902618119F0054F932 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		9F5E57ED2615BADF00767819 /* MedicineModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineModel.swift; sourceTree = "<group>"; };
 		9F5E57F02615BB2100767819 /* Medicine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medicine.swift; sourceTree = "<group>"; };
 		9F5E57F32615C2E500767819 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
@@ -144,7 +144,7 @@
 		9F064D8B2618116D0054F932 /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				9F064D902618119F0054F932 /* VitaminCell.swift */,
+				9F064D902618119F0054F932 /* CategoryCell.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -327,7 +327,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F064D912618119F0054F932 /* VitaminCell.swift in Sources */,
+				9F064D912618119F0054F932 /* CategoryCell.swift in Sources */,
 				9FF308182616C4FA004E3AF4 /* CheckOutViewController.swift in Sources */,
 				4ED670F92615A63C00A48322 /* MainViewController.swift in Sources */,
 				9F5E57F12615BB2100767819 /* Medicine.swift in Sources */,

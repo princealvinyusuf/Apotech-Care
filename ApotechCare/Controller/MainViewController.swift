@@ -129,6 +129,8 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
+        
+        // ROW 1
         if collectionView == self.medicineCollectionView {
             
             switch indexPath.row {
@@ -162,13 +164,33 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
             
         }
         
+        
+        // ROW 2
         if collectionView == self.categoryOneCollectionView {
             
             switch indexPath.row {
             case 0:
-                performScreenPresentationOne(index: 0)
+                performScreenPresentationOne(index: indexPath.row)
             case 1:
-                performScreenPresentationOne(index: 0)
+                performScreenPresentationOne(index: indexPath.row)
+            case 2:
+                performScreenPresentationOne(index: indexPath.row)
+            case 3:
+                performScreenPresentationOne(index: indexPath.row)
+            case 4:
+                performScreenPresentationOne(index: indexPath.row)
+            case 5:
+                performScreenPresentationOne(index: indexPath.row)
+            case 6:
+                performScreenPresentationOne(index: indexPath.row)
+            case 7:
+                performScreenPresentationOne(index: indexPath.row)
+            case 8:
+                performScreenPresentationOne(index: indexPath.row)
+            case 9:
+                performScreenPresentationOne(index: indexPath.row)
+            case 10:
+                performScreenPresentationOne(index: indexPath.row)
             default:
             print("Default Item")
             }
@@ -177,11 +199,41 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
             
         }
         
+        // ROW 3
+        
         if collectionView == self.categoryTwoCollectionView {
             
-    
+            switch indexPath.row {
+            case 0:
+                performScreenPresentationTwo(index: indexPath.row)
+            case 1:
+                performScreenPresentationTwo(index: indexPath.row)
+            case 2:
+                performScreenPresentationTwo(index: indexPath.row)
+            case 3:
+                performScreenPresentationTwo(index: indexPath.row)
+            case 4:
+                performScreenPresentationTwo(index: indexPath.row)
+            case 5:
+                performScreenPresentationTwo(index: indexPath.row)
+            case 6:
+                performScreenPresentationTwo(index: indexPath.row)
+            case 7:
+                performScreenPresentationTwo(index: indexPath.row)
+            case 8:
+                performScreenPresentationTwo(index: indexPath.row)
+            case 9:
+                performScreenPresentationTwo(index: indexPath.row)
+            case 10:
+                performScreenPresentationTwo(index: indexPath.row)
+            default:
+            print("Default Item")
+            }
+            
             
         }
+        
+        // ROW 4
         
         if collectionView == self.categoryThreeCollectionView {
             
@@ -225,12 +277,60 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
         
     }
     
-    
+    // ROW 1
     func performScreenPresentationOne(index: Int) {
         switch index {
         case 0:
             prepareDataOne(index)
         case 1:
+            prepareDataOne(index)
+        case 2:
+            prepareDataOne(index)
+        case 3:
+            prepareDataOne(index)
+        case 4:
+            prepareDataOne(index)
+        case 5:
+            prepareDataOne(index)
+        case 6:
+            prepareDataOne(index)
+        case 7:
+            prepareDataOne(index)
+        case 8:
+            prepareDataOne(index)
+        case 9:
+            prepareDataOne(index)
+        case 10:
+            prepareDataOne(index)
+        default:
+            print("Default Item")
+        }
+    }
+    
+    // ROW 1
+    func performScreenPresentationTwo(index: Int) {
+        switch index {
+        case 0:
+            prepareDataOne(index)
+        case 1:
+            prepareDataOne(index)
+        case 2:
+            prepareDataOne(index)
+        case 3:
+            prepareDataOne(index)
+        case 4:
+            prepareDataOne(index)
+        case 5:
+            prepareDataOne(index)
+        case 6:
+            prepareDataOne(index)
+        case 7:
+            prepareDataOne(index)
+        case 8:
+            prepareDataOne(index)
+        case 9:
+            prepareDataOne(index)
+        case 10:
             prepareDataOne(index)
         default:
             print("Default Item")

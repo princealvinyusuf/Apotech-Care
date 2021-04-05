@@ -27,10 +27,10 @@ class CategoryModel {
     // MARK: - FAVORITE
     let favorite: [Category] = [
         
-        Category(image: "vitaminOne", name: "Vitamin A"),
-        Category(image: "vitaminTwo", name: "Vitamin B"),
-        Category(image: "vitaminThree", name: "Vitamin C"),
-        Category(image: "vitaminFour", name: "Vitamin D")
+        Category(image: "contraseptiveOne", name: "Spiral"),
+        Category(image: "contraseptiveTwo", name: "Suntik"),
+        Category(image: "contraseptiveThree", name: "Pil"),
+        Category(image: "contraseptiveFour", name: "Condom")
         
     ]
     
@@ -48,10 +48,10 @@ class CategoryModel {
     // MARK: - PERAWATAN WAJAH
     let perawatanWajah: [Category] = [
         
-        Category(image: "vitaminOne", name: "Vitamin A"),
-        Category(image: "vitaminTwo", name: "Vitamin B"),
-        Category(image: "vitaminThree", name: "Vitamin C"),
-        Category(image: "vitaminFour", name: "Vitamin D")
+        Category(image: "facialOne", name: "Biore"),
+        Category(image: "facialTwo", name: "Ponds"),
+        Category(image: "facialThree", name: "Citra"),
+        Category(image: "facialFour", name: "Garnier")
         
     ]
     
@@ -78,20 +78,20 @@ class CategoryModel {
     // MARK: - ALAT NON MEDIS
     let alatNonMedis: [Category] = [
         
-        Category(image: "vitaminOne", name: "Vitamin A"),
-        Category(image: "vitaminTwo", name: "Vitamin B"),
-        Category(image: "vitaminThree", name: "Vitamin C"),
-        Category(image: "vitaminFour", name: "Vitamin D")
+        Category(image: "contraseptiveOne", name: "KB Spiral"),
+        Category(image: "contraseptiveTwo", name: "Vitamin B"),
+        Category(image: "contraseptiveThree", name: ""),
+        Category(image: "contraseptiveFour", name: "Condom")
         
     ]
     
     // MARK: - ALAT KONTRASEPSI
     let alatKontrasepsi: [Category] = [
         
-        Category(image: "vitaminOne", name: "Vitamin A"),
-        Category(image: "vitaminTwo", name: "Vitamin B"),
-        Category(image: "vitaminThree", name: "Vitamin C"),
-        Category(image: "vitaminFour", name: "Vitamin D")
+        Category(image: "contraseptiveOne", name: "Spiral"),
+        Category(image: "contraseptiveTwo", name: "Suntik"),
+        Category(image: "contraseptiveThree", name: "Pil"),
+        Category(image: "contraseptiveFour", name: "Condom")
         
     ]
     
