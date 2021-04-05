@@ -76,6 +76,7 @@
                 <outlet property="medicineImageView" destination="gHe-qW-4rR" id="Uqw-tS-6Un"/>
                 <outlet property="medicineLabel" destination="r02-Th-NRb" id="xtx-1Y-RGN"/>
                 <outlet property="priceLabel" destination="yCm-Xj-Mgh" id="bKw-PD-ycJ"/>
+                <outlet property="totalLabel" destination="LTX-GC-jaC" id="pHn-XU-f3M"/>
             </connections>
             <point key="canvasLocation" x="179.71014492753625" y="148.66071428571428"/>
         </tableViewCell>

@@ -17,12 +17,12 @@ class MedicineViewController: UIViewController {
     
     
     // Variable
-    var imageString: String?
+    var imageString: String = ""
     var medicineImageViewData: UIImage!
-    var apotechLabelData: String?
-    var medicineSummaryData: String?
-    var priceLabelData: String?
-    var medicineDescriptionData: String?
+    var apotechLabelData: String = ""
+    var medicineSummaryData: String = ""
+    var priceLabelData: String = ""
+    var medicineDescriptionData: String = ""
     let price: [String] = [
         "5.000", "10.000", "15.000",
     ]
@@ -58,7 +58,7 @@ class MedicineViewController: UIViewController {
         medicineImageView.image = medicineImageViewData
         apotechLabel.text = apotechLabelData
         medicineSummary.text = medicineSummaryData
-        priceLabel.text = "Rp. \(priceLabelData!)"
+        priceLabel.text = "Rp. \(priceLabelData)"
         medicineDescription.text = medicineDescriptionData
         
         countLabel.text = "Count: \(countValue)"
@@ -123,7 +123,7 @@ extension MedicineViewController {
         
         // Get nameMedicine, price, count data, total bayar
         
-        let priceItem = Double(priceLabelData!)! * 1000
+        let priceItem = Double(priceLabelData)! * 1000
         let countValueItem = Double(countValue)
         let deliveryCharges = Double(selectedPrice!)! * 1000
         let totalPay = (priceItem * countValueItem) + deliveryCharges  // 36000.0
@@ -142,11 +142,13 @@ extension MedicineViewController {
     
             let newChart = MedicineObject()
             newChart.count = String(self.countValue)
-            newChart.medicine = self.title
+            newChart.medicine = self.title!
             newChart.medicinePrice = self.priceLabelData
-            newChart.totalPay = formattedNumber! // 36,000
+            newChart.totalPay = (formattedNumber!) // 36,000
             newChart.image = self.imageString
             
+            
+//            "\"\(formattedNumber!)\""
             
             self.saveData(medicineObject: newChart)
             self.navigationController?.popViewController(animated: true)

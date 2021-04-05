@@ -8,5 +8,6 @@ target 'ApotechCare' do
   # Pods for ApotechCare
 
 pod 'RealmSwift'
+pod 'SwipeCellKit'
 
 end

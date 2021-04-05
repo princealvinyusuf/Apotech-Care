@@ -7,13 +7,15 @@
 //
 
 import UIKit
+import SwipeCellKit
 
-class CheckOutCell: UITableViewCell {
+class CheckOutCell: SwipeTableViewCell {
 
     @IBOutlet weak var medicineImageView: UIImageView!
     @IBOutlet weak var medicineLabel: UILabel!
     @IBOutlet weak var itemCount: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
+    @IBOutlet weak var totalLabel: UILabel!
     
     
     override func awakeFromNib() {
