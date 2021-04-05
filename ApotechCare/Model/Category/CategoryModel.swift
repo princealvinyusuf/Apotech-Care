@@ -58,20 +58,20 @@ class CategoryModel {
     // MARK: - PERAWATAN TUBUH
     let perawatanTubuh: [Category] = [
         
-        Category(image: "vitaminOne", name: "Vitamin A"),
-        Category(image: "vitaminTwo", name: "Vitamin B"),
-        Category(image: "vitaminThree", name: "Vitamin C"),
-        Category(image: "vitaminFour", name: "Vitamin D")
+        Category(image: "bodyOne", name: "Betason"),
+        Category(image: "bodyTwo", name: "Appeton"),
+        Category(image: "bodyThree", name: "Sangobion"),
+        Category(image: "bodyFour", name: "Thermolyte")
         
     ]
     
     // MARK: - ALAT KESEHATAN
     let alatKesehatan: [Category] = [
         
-        Category(image: "vitaminOne", name: "Vitamin A"),
-        Category(image: "vitaminTwo", name: "Vitamin B"),
-        Category(image: "vitaminThree", name: "Vitamin C"),
-        Category(image: "vitaminFour", name: "Vitamin D")
+        Category(image: "healthOne", name: "Contact Lens"),
+        Category(image: "healthTwo", name: "Glass"),
+        Category(image: "healthThree", name: "Mask"),
+        Category(image: "healthFour", name: "Glove")
         
     ]
     
