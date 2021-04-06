@@ -11,7 +11,7 @@ import UIKit
 class CategoryCell: UICollectionViewCell {
 
     @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var vitaminLabel: UILabel!
+    @IBOutlet weak var productLabel: UILabel!
     
     override class func awakeFromNib() {
         

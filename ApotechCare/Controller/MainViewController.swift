@@ -93,7 +93,7 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
             let image = UIImage(named: "\(index.image)")
             cellMedicine.imageView.image = image
             cellMedicine.medicineLabel.text = index.medicine
-            cellMedicine.priceLabel.text = index.price
+            cellMedicine.priceLabel.text = "Rp. \(index.price)"
             
             return cellMedicine
         }
@@ -260,6 +260,20 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
             
         
     }
+    func prepareDataToMedicine(_ index : Int) {
+        let indexPath = medicineModel.medicine[index]
+        let image = UIImage(named: "\(indexPath.image)")
+        
+        let medicineVC = storyboard?.instantiateViewController(identifier: "medicineViewController") as! MedicineViewController
+        medicineVC.title = indexPath.medicine
+        medicineVC.medicineImageViewData = image
+        medicineVC.apotechLabelData = indexPath.apotek
+        medicineVC.medicineSummaryData = indexPath.medicineSummary
+        medicineVC.priceLabelData = indexPath.price
+        medicineVC.medicineDescriptionData = indexPath.description
+        medicineVC.imageString = indexPath.image
+        self.navigationController?.pushViewController(medicineVC, animated: true)
+    }
     
     // ROW 1
     func performScreenPresentationOne(index: Int) {
@@ -289,20 +303,7 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
         }
     }
     
-    func prepareDataToMedicine(_ index : Int) {
-        let indexPath = medicineModel.medicine[index]
-        let image = UIImage(named: "\(indexPath.image)")
-        
-        let medicineVC = storyboard?.instantiateViewController(identifier: "medicineViewController") as! MedicineViewController
-        medicineVC.title = indexPath.medicine
-        medicineVC.medicineImageViewData = image
-        medicineVC.apotechLabelData = indexPath.apotek
-        medicineVC.medicineSummaryData = indexPath.medicineSummary
-        medicineVC.priceLabelData = indexPath.price
-        medicineVC.medicineDescriptionData = indexPath.description
-        medicineVC.imageString = indexPath.image
-        self.navigationController?.pushViewController(medicineVC, animated: true)
-    }
+    
     
     
     func prepareDataToCategory(_ index : Int, categoryName: String) {

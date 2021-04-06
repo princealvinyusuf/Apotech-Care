@@ -11,7 +11,7 @@ import Foundation
 struct ItemArray {
     
     let favorite: [String] = [
-    "Spiral", "Suntik", "Pil", "Kondom",
+    "Spiral", "Suntik", "Pil", "Condom",
     ]
     
     let vitamin: [String] = [
@@ -35,7 +35,7 @@ struct ItemArray {
     ]
     
     let alatKontrasepsi: [String] = [
-    "Spiral", "Suntik", "Pil", "Kondom",
+    "Spiral", "Suntik", "Pil", "Condom",
     ]
     
     let bayi: [String] = [

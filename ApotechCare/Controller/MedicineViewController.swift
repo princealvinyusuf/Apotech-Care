@@ -126,40 +126,83 @@ extension MedicineViewController {
         
         // Get nameMedicine, price, count data, total bayar
         
-        let priceItem = Double(priceLabelData)! * 1000
-        let countValueItem = Double(countValue)
-        let deliveryCharges = Double(selectedPrice!)! * 1000
-        let totalPay = (priceItem * countValueItem) + deliveryCharges  // 36000.0
-        
-        let numberToFormat = totalPay
-        let numberFormatter = NumberFormatter()
-        numberFormatter.numberStyle = .decimal
-        let formattedNumber = numberFormatter.string(from: NSNumber(value:numberToFormat))
-        
-        
-        let alert = UIAlertController(title: "Order are stored", message: "Thank you for buying", preferredStyle: .alert)
-        
-        let action = UIAlertAction(title: "Close", style: .default) { (action) in
+        if pricePicker.text!.isEmpty && countValue == 0 {
             
-            // What happen if user click close button
-    
-            let newChart = MedicineObject()
-            newChart.count = String(self.countValue)
-            newChart.medicine = self.title!
-            newChart.medicinePrice = self.priceLabelData
-            newChart.totalPay = (formattedNumber!) // 36,000
-            newChart.image = self.imageString
+            let alert = UIAlertController(title: "Failed to add your order", message: "Please fill the destination and item product first", preferredStyle: .alert)
+            let action = UIAlertAction(title: "Oke!", style: .cancel) { (action) in
+            }
             
+            alert.addAction(action)
+            present(alert, animated: true, completion: nil)
             
-//            "\"\(formattedNumber!)\""
-            
-            self.saveData(medicineObject: newChart)
-            self.navigationController?.popViewController(animated: true)
             
         }
         
-        alert.addAction(action)
-        present(alert, animated: true, completion: nil)
+        if pricePicker.text!.isEmpty || countValue == 0 {
+            
+            let alert = UIAlertController(title: "... Empty", message: "Please fill the data first", preferredStyle: .alert)
+            let action = UIAlertAction(title: "Oke!", style: .cancel) { (action) in
+            }
+            alert.addAction(action)
+            
+            
+            if pricePicker.text!.isEmpty && countValue == 0 {
+                alert.title = "Failed to add your order"
+                alert.message = "Please fill the destination and item product first"
+            }
+            if pricePicker.text!.isEmpty {
+                alert.title = "Shipping Charges is Empty"
+                alert.message = "Please fill the destination first"
+            } else {
+                alert.title = "Product Item is Empty (0)"
+                alert.message = "Please fill the item product first"
+            }
+            
+            
+            present(alert, animated: true, completion: nil)
+            
+        }
+        
+        
+        
+        else {
+            
+            let priceItem = Double(priceLabelData)! * 1000
+            let countValueItem = Double(countValue)
+            let deliveryCharges = Double(selectedPrice!)! * 1000
+            let totalPay = (priceItem * countValueItem) + deliveryCharges  // 36000.0
+            
+            let numberToFormat = totalPay
+            let numberFormatter = NumberFormatter()
+            numberFormatter.numberStyle = .decimal
+            let formattedNumber = numberFormatter.string(from: NSNumber(value:numberToFormat))
+            
+            
+            let alert = UIAlertController(title: "Order are stored", message: "Thank you for buying", preferredStyle: .alert)
+            
+            let action = UIAlertAction(title: "Close", style: .default) { (action) in
+                
+                // What happen if user click close button
+        
+                let newChart = MedicineObject()
+                newChart.count = String(self.countValue)
+                newChart.medicine = self.title!
+                newChart.medicinePrice = self.priceLabelData
+                newChart.totalPay = (formattedNumber!) // 36,000
+                newChart.image = self.imageString
+                
+                
+    //            "\"\(formattedNumber!)\""
+                
+                self.saveData(medicineObject: newChart)
+                self.navigationController?.popViewController(animated: true)
+                
+            }
+            
+            alert.addAction(action)
+            present(alert, animated: true, completion: nil)
+        }
+        
         
     }
     

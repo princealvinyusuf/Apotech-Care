@@ -396,7 +396,7 @@
                                 <rect key="frame" x="15" y="758" width="384" height="45"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G4p-Jt-w9d">
-                                        <rect key="frame" x="0.0" y="0.0" width="167" height="45"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="384" height="45"/>
                                         <color key="backgroundColor" systemColor="systemBlueColor"/>
                                         <state key="normal" title="Add to chart">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -409,18 +409,6 @@
                                         <connections>
                                             <action selector="addToChartPressed:" destination="YJZ-3q-iSs" eventType="touchUpInside" id="8iu-Z4-XCx"/>
                                         </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QWV-IP-kcV">
-                                        <rect key="frame" x="217" y="0.0" width="167" height="45"/>
-                                        <color key="backgroundColor" systemColor="systemBlueColor"/>
-                                        <state key="normal" title="Pay Now">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="8"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -527,7 +515,7 @@
                                         <size key="customSize" width="155" height="133"/>
                                         <connections>
                                             <outlet property="imageView" destination="vJe-ds-gry" id="9qP-AW-clz"/>
-                                            <outlet property="vitaminLabel" destination="YqA-A4-aZB" id="9S3-o9-UtN"/>
+                                            <outlet property="productLabel" destination="YqA-A4-aZB" id="9S3-o9-UtN"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -576,7 +564,7 @@
                                         <size key="customSize" width="155" height="133"/>
                                         <connections>
                                             <outlet property="imageView" destination="zsB-Xl-tAf" id="eez-2o-aRZ"/>
-                                            <outlet property="vitaminLabel" destination="po4-F9-6fq" id="brR-8h-VRW"/>
+                                            <outlet property="productLabel" destination="po4-F9-6fq" id="brR-8h-VRW"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>

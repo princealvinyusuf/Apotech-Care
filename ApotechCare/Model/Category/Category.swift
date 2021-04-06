@@ -13,4 +13,11 @@ struct Category {
     let image: String
     let name: String
     
+    let price: String
+    
+    let apotek: String
+    let medicineSummary: String
+    let description: String
+    let priceDeliver: [String]
+    
 }

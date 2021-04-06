@@ -12,8 +12,8 @@ class CategoryViewController: UIViewController {
     
     var categoryModel = CategoryModel()
     
-    var index: Int?
-    var itemName = [String]()
+    var index: Int? // 0
+    var itemName = [String]() // ["Spiral", "Suntik", "Pil", "Condom"]
     
     @IBOutlet weak var collectionOne: UICollectionView!
     @IBOutlet weak var collectionTwo: UICollectionView!
@@ -22,9 +22,6 @@ class CategoryViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        print(index!)
-        print(itemName)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -83,7 +80,7 @@ extension CategoryViewController: UICollectionViewDelegate, UICollectionViewData
                 let image = UIImage(named: "\(index.image)")
                 
                 cellOne.imageView.image = image
-                cellOne.vitaminLabel.text = index.name
+                cellOne.productLabel.text = index.name
                 
                 return cellOne
             }
@@ -95,7 +92,7 @@ extension CategoryViewController: UICollectionViewDelegate, UICollectionViewData
                 let image = UIImage(named: "\(index.image)")
                 
                 cellTwo.imageView.image = image
-                cellTwo.vitaminLabel.text = index.name
+                cellTwo.productLabel.text = index.name
                 
                 return cellTwo
                 
@@ -109,7 +106,7 @@ extension CategoryViewController: UICollectionViewDelegate, UICollectionViewData
                 let image = UIImage(named: "\(index.image)")
                 
                 cellOne.imageView.image = image
-                cellOne.vitaminLabel.text = index.name
+                cellOne.productLabel.text = index.name
                 
                 return cellOne
             }
@@ -120,7 +117,7 @@ extension CategoryViewController: UICollectionViewDelegate, UICollectionViewData
                 let image = UIImage(named: "\(index.image)")
                 
                 cellTwo.imageView.image = image
-                cellTwo.vitaminLabel.text = index.name
+                cellTwo.productLabel.text = index.name
                 
                 return cellTwo
                 
@@ -134,7 +131,7 @@ extension CategoryViewController: UICollectionViewDelegate, UICollectionViewData
                 let image = UIImage(named: "\(index.image)")
                 
                 cellOne.imageView.image = image
-                cellOne.vitaminLabel.text = index.name
+                cellOne.productLabel.text = index.name
                 
                 return cellOne
             }
@@ -145,7 +142,7 @@ extension CategoryViewController: UICollectionViewDelegate, UICollectionViewData
                 let image = UIImage(named: "\(index.image)")
                 
                 cellTwo.imageView.image = image
-                cellTwo.vitaminLabel.text = index.name
+                cellTwo.productLabel.text = index.name
                 
                 return cellTwo
                 
@@ -159,7 +156,7 @@ extension CategoryViewController: UICollectionViewDelegate, UICollectionViewData
                 let image = UIImage(named: "\(index.image)")
                 
                 cellOne.imageView.image = image
-                cellOne.vitaminLabel.text = index.name
+                cellOne.productLabel.text = index.name
                 
                 return cellOne
             }
@@ -170,7 +167,7 @@ extension CategoryViewController: UICollectionViewDelegate, UICollectionViewData
                 let image = UIImage(named: "\(index.image)")
                 
                 cellTwo.imageView.image = image
-                cellTwo.vitaminLabel.text = index.name
+                cellTwo.productLabel.text = index.name
                 
                 return cellTwo
                 
@@ -184,7 +181,7 @@ extension CategoryViewController: UICollectionViewDelegate, UICollectionViewData
                 let image = UIImage(named: "\(index.image)")
                 
                 cellOne.imageView.image = image
-                cellOne.vitaminLabel.text = index.name
+                cellOne.productLabel.text = index.name
                 
                 return cellOne
             }
@@ -195,7 +192,7 @@ extension CategoryViewController: UICollectionViewDelegate, UICollectionViewData
                 let image = UIImage(named: "\(index.image)")
                 
                 cellTwo.imageView.image = image
-                cellTwo.vitaminLabel.text = index.name
+                cellTwo.productLabel.text = index.name
                 
                 return cellTwo
                 
@@ -209,7 +206,7 @@ extension CategoryViewController: UICollectionViewDelegate, UICollectionViewData
                 let image = UIImage(named: "\(index.image)")
                 
                 cellOne.imageView.image = image
-                cellOne.vitaminLabel.text = index.name
+                cellOne.productLabel.text = index.name
                 
                 return cellOne
             }
@@ -220,7 +217,7 @@ extension CategoryViewController: UICollectionViewDelegate, UICollectionViewData
                 let image = UIImage(named: "\(index.image)")
                 
                 cellTwo.imageView.image = image
-                cellTwo.vitaminLabel.text = index.name
+                cellTwo.productLabel.text = index.name
                 
                 return cellTwo
                 
@@ -234,7 +231,7 @@ extension CategoryViewController: UICollectionViewDelegate, UICollectionViewData
                 let image = UIImage(named: "\(index.image)")
                 
                 cellOne.imageView.image = image
-                cellOne.vitaminLabel.text = index.name
+                cellOne.productLabel.text = index.name
                 
                 return cellOne
             }
@@ -245,7 +242,7 @@ extension CategoryViewController: UICollectionViewDelegate, UICollectionViewData
                 let image = UIImage(named: "\(index.image)")
                 
                 cellTwo.imageView.image = image
-                cellTwo.vitaminLabel.text = index.name
+                cellTwo.productLabel.text = index.name
                 
                 return cellTwo
                 
@@ -259,7 +256,7 @@ extension CategoryViewController: UICollectionViewDelegate, UICollectionViewData
                 let image = UIImage(named: "\(index.image)")
                 
                 cellOne.imageView.image = image
-                cellOne.vitaminLabel.text = index.name
+                cellOne.productLabel.text = index.name
                 
                 return cellOne
             }
@@ -270,7 +267,7 @@ extension CategoryViewController: UICollectionViewDelegate, UICollectionViewData
                 let image = UIImage(named: "\(index.image)")
                 
                 cellTwo.imageView.image = image
-                cellTwo.vitaminLabel.text = index.name
+                cellTwo.productLabel.text = index.name
                 
                 return cellTwo
                 
@@ -284,7 +281,7 @@ extension CategoryViewController: UICollectionViewDelegate, UICollectionViewData
                 let image = UIImage(named: "\(index.image)")
                 
                 cellOne.imageView.image = image
-                cellOne.vitaminLabel.text = index.name
+                cellOne.productLabel.text = index.name
                 
                 return cellOne
             }
@@ -295,7 +292,7 @@ extension CategoryViewController: UICollectionViewDelegate, UICollectionViewData
                 let image = UIImage(named: "\(index.image)")
                 
                 cellTwo.imageView.image = image
-                cellTwo.vitaminLabel.text = index.name
+                cellTwo.productLabel.text = index.name
                 
                 return cellTwo
                 
@@ -311,21 +308,491 @@ extension CategoryViewController: UICollectionViewDelegate, UICollectionViewData
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
+       
+        
         if collectionView == self.collectionOne {
-            print("1")
+            print("Collection One Pressed")
+            switch indexPath.row {
+            case 0:
+                prepareDataToMedicine(itemName[indexPath.row], indexNumber: indexPath.row)
+            case 1:
+                prepareDataToMedicine(itemName[indexPath.row], indexNumber: indexPath.row)
+            default:
+                print("Default Item")
+            }
+            
         }
         
         if collectionView == self.collectionTwo {
-            print("2")
+            print("Collection Two Pressed")
+            switch indexPath.row {
+            case 0:
+                prepareDataToMedicine(itemName[indexPath.row + 2], indexNumber: indexPath.row + 2)
+            case 1:
+                prepareDataToMedicine(itemName[indexPath.row + 2], indexNumber: indexPath.row + 2)
+            default:
+                print("Default Item")
+            }
         }
-//        switch itemName {
-//        case "":
-//            <#code#>
-//        default:
-//            <#code#>
-//        }
+        
+        
+        
     }
     
+    func prepareDataToMedicine(_ index: String, indexNumber: Int) {
+        switch index {
+        case "Spiral":
+            let indexPath = categoryModel.favorite[indexNumber]
+            let image = UIImage(named: "\(indexPath.image)")
+            
+            let medicineVC = storyboard?.instantiateViewController(identifier: "medicineViewController") as! MedicineViewController
+            medicineVC.title = indexPath.name
+            medicineVC.medicineImageViewData = image
+            medicineVC.apotechLabelData = indexPath.apotek
+            medicineVC.medicineSummaryData = indexPath.medicineSummary
+            medicineVC.priceLabelData = indexPath.price
+            medicineVC.medicineDescriptionData = indexPath.description
+            medicineVC.imageString = indexPath.image
+            self.navigationController?.pushViewController(medicineVC, animated: true)
+            
+        case "Suntik":
+            let indexPath = categoryModel.favorite[indexNumber]
+            let image = UIImage(named: "\(indexPath.image)")
+            
+            let medicineVC = storyboard?.instantiateViewController(identifier: "medicineViewController") as! MedicineViewController
+            medicineVC.title = indexPath.name
+            medicineVC.medicineImageViewData = image
+            medicineVC.apotechLabelData = indexPath.apotek
+            medicineVC.medicineSummaryData = indexPath.medicineSummary
+            medicineVC.priceLabelData = indexPath.price
+            medicineVC.medicineDescriptionData = indexPath.description
+            medicineVC.imageString = indexPath.image
+            self.navigationController?.pushViewController(medicineVC, animated: true)
+            
+        case "Pil":
+            let indexPath = categoryModel.favorite[indexNumber]
+            let image = UIImage(named: "\(indexPath.image)")
+            
+            let medicineVC = storyboard?.instantiateViewController(identifier: "medicineViewController") as! MedicineViewController
+            medicineVC.title = indexPath.name
+            medicineVC.medicineImageViewData = image
+            medicineVC.apotechLabelData = indexPath.apotek
+            medicineVC.medicineSummaryData = indexPath.medicineSummary
+            medicineVC.priceLabelData = indexPath.price
+            medicineVC.medicineDescriptionData = indexPath.description
+            medicineVC.imageString = indexPath.image
+            self.navigationController?.pushViewController(medicineVC, animated: true)
+            
+        case "Condom":
+            let indexPath = categoryModel.favorite[indexNumber]
+            let image = UIImage(named: "\(indexPath.image)")
+            
+            let medicineVC = storyboard?.instantiateViewController(identifier: "medicineViewController") as! MedicineViewController
+            medicineVC.title = indexPath.name
+            medicineVC.medicineImageViewData = image
+            medicineVC.apotechLabelData = indexPath.apotek
+            medicineVC.medicineSummaryData = indexPath.medicineSummary
+            medicineVC.priceLabelData = indexPath.price
+            medicineVC.medicineDescriptionData = indexPath.description
+            medicineVC.imageString = indexPath.image
+            self.navigationController?.pushViewController(medicineVC, animated: true)
+            
+        case "Vitamin A":
+            let indexPath = categoryModel.vitamin[indexNumber]
+            let image = UIImage(named: "\(indexPath.image)")
+            
+            let medicineVC = storyboard?.instantiateViewController(identifier: "medicineViewController") as! MedicineViewController
+            medicineVC.title = indexPath.name
+            medicineVC.medicineImageViewData = image
+            medicineVC.apotechLabelData = indexPath.apotek
+            medicineVC.medicineSummaryData = indexPath.medicineSummary
+            medicineVC.priceLabelData = indexPath.price
+            medicineVC.medicineDescriptionData = indexPath.description
+            medicineVC.imageString = indexPath.image
+            self.navigationController?.pushViewController(medicineVC, animated: true)
+            
+        case "Vitamin B":
+            let indexPath = categoryModel.vitamin[indexNumber]
+            let image = UIImage(named: "\(indexPath.image)")
+            
+            let medicineVC = storyboard?.instantiateViewController(identifier: "medicineViewController") as! MedicineViewController
+            medicineVC.title = indexPath.name
+            medicineVC.medicineImageViewData = image
+            medicineVC.apotechLabelData = indexPath.apotek
+            medicineVC.medicineSummaryData = indexPath.medicineSummary
+            medicineVC.priceLabelData = indexPath.price
+            medicineVC.medicineDescriptionData = indexPath.description
+            medicineVC.imageString = indexPath.image
+            self.navigationController?.pushViewController(medicineVC, animated: true)
+            
+        case "Vitamin C":
+            let indexPath = categoryModel.vitamin[indexNumber]
+            let image = UIImage(named: "\(indexPath.image)")
+            
+            let medicineVC = storyboard?.instantiateViewController(identifier: "medicineViewController") as! MedicineViewController
+            medicineVC.title = indexPath.name
+            medicineVC.medicineImageViewData = image
+            medicineVC.apotechLabelData = indexPath.apotek
+            medicineVC.medicineSummaryData = indexPath.medicineSummary
+            medicineVC.priceLabelData = indexPath.price
+            medicineVC.medicineDescriptionData = indexPath.description
+            medicineVC.imageString = indexPath.image
+            self.navigationController?.pushViewController(medicineVC, animated: true)
+            
+        case "Vitamin D":
+            let indexPath = categoryModel.vitamin[indexNumber]
+            let image = UIImage(named: "\(indexPath.image)")
+            
+            let medicineVC = storyboard?.instantiateViewController(identifier: "medicineViewController") as! MedicineViewController
+            medicineVC.title = indexPath.name
+            medicineVC.medicineImageViewData = image
+            medicineVC.apotechLabelData = indexPath.apotek
+            medicineVC.medicineSummaryData = indexPath.medicineSummary
+            medicineVC.priceLabelData = indexPath.price
+            medicineVC.medicineDescriptionData = indexPath.description
+            medicineVC.imageString = indexPath.image
+            self.navigationController?.pushViewController(medicineVC, animated: true)
+            
+        case "Biore":
+            let indexPath = categoryModel.perawatanWajah[indexNumber]
+            let image = UIImage(named: "\(indexPath.image)")
+            
+            let medicineVC = storyboard?.instantiateViewController(identifier: "medicineViewController") as! MedicineViewController
+            medicineVC.title = indexPath.name
+            medicineVC.medicineImageViewData = image
+            medicineVC.apotechLabelData = indexPath.apotek
+            medicineVC.medicineSummaryData = indexPath.medicineSummary
+            medicineVC.priceLabelData = indexPath.price
+            medicineVC.medicineDescriptionData = indexPath.description
+            medicineVC.imageString = indexPath.image
+            self.navigationController?.pushViewController(medicineVC, animated: true)
+            
+        case "Ponds":
+            let indexPath = categoryModel.perawatanWajah[indexNumber]
+            let image = UIImage(named: "\(indexPath.image)")
+            
+            let medicineVC = storyboard?.instantiateViewController(identifier: "medicineViewController") as! MedicineViewController
+            medicineVC.title = indexPath.name
+            medicineVC.medicineImageViewData = image
+            medicineVC.apotechLabelData = indexPath.apotek
+            medicineVC.medicineSummaryData = indexPath.medicineSummary
+            medicineVC.priceLabelData = indexPath.price
+            medicineVC.medicineDescriptionData = indexPath.description
+            medicineVC.imageString = indexPath.image
+            self.navigationController?.pushViewController(medicineVC, animated: true)
+            
+        case "Citra":
+            let indexPath = categoryModel.perawatanWajah[indexNumber]
+            let image = UIImage(named: "\(indexPath.image)")
+            
+            let medicineVC = storyboard?.instantiateViewController(identifier: "medicineViewController") as! MedicineViewController
+            medicineVC.title = indexPath.name
+            medicineVC.medicineImageViewData = image
+            medicineVC.apotechLabelData = indexPath.apotek
+            medicineVC.medicineSummaryData = indexPath.medicineSummary
+            medicineVC.priceLabelData = indexPath.price
+            medicineVC.medicineDescriptionData = indexPath.description
+            medicineVC.imageString = indexPath.image
+            self.navigationController?.pushViewController(medicineVC, animated: true)
+            
+        case "Garnier":
+            let indexPath = categoryModel.perawatanWajah[indexNumber]
+            let image = UIImage(named: "\(indexPath.image)")
+            
+            let medicineVC = storyboard?.instantiateViewController(identifier: "medicineViewController") as! MedicineViewController
+            medicineVC.title = indexPath.name
+            medicineVC.medicineImageViewData = image
+            medicineVC.apotechLabelData = indexPath.apotek
+            medicineVC.medicineSummaryData = indexPath.medicineSummary
+            medicineVC.priceLabelData = indexPath.price
+            medicineVC.medicineDescriptionData = indexPath.description
+            medicineVC.imageString = indexPath.image
+            self.navigationController?.pushViewController(medicineVC, animated: true)
+            
+        case "Betason":
+            let indexPath = categoryModel.perawatanTubuh[indexNumber]
+            let image = UIImage(named: "\(indexPath.image)")
+            
+            let medicineVC = storyboard?.instantiateViewController(identifier: "medicineViewController") as! MedicineViewController
+            medicineVC.title = indexPath.name
+            medicineVC.medicineImageViewData = image
+            medicineVC.apotechLabelData = indexPath.apotek
+            medicineVC.medicineSummaryData = indexPath.medicineSummary
+            medicineVC.priceLabelData = indexPath.price
+            medicineVC.medicineDescriptionData = indexPath.description
+            medicineVC.imageString = indexPath.image
+            self.navigationController?.pushViewController(medicineVC, animated: true)
+            
+        case "Appeton":
+            let indexPath = categoryModel.perawatanTubuh[indexNumber]
+            let image = UIImage(named: "\(indexPath.image)")
+            
+            let medicineVC = storyboard?.instantiateViewController(identifier: "medicineViewController") as! MedicineViewController
+            medicineVC.title = indexPath.name
+            medicineVC.medicineImageViewData = image
+            medicineVC.apotechLabelData = indexPath.apotek
+            medicineVC.medicineSummaryData = indexPath.medicineSummary
+            medicineVC.priceLabelData = indexPath.price
+            medicineVC.medicineDescriptionData = indexPath.description
+            medicineVC.imageString = indexPath.image
+            self.navigationController?.pushViewController(medicineVC, animated: true)
+            
+        case "Sangobion":
+            let indexPath = categoryModel.perawatanTubuh[indexNumber]
+            let image = UIImage(named: "\(indexPath.image)")
+            
+            let medicineVC = storyboard?.instantiateViewController(identifier: "medicineViewController") as! MedicineViewController
+            medicineVC.title = indexPath.name
+            medicineVC.medicineImageViewData = image
+            medicineVC.apotechLabelData = indexPath.apotek
+            medicineVC.medicineSummaryData = indexPath.medicineSummary
+            medicineVC.priceLabelData = indexPath.price
+            medicineVC.medicineDescriptionData = indexPath.description
+            medicineVC.imageString = indexPath.image
+            self.navigationController?.pushViewController(medicineVC, animated: true)
+            
+        case "Thermolyte":
+            let indexPath = categoryModel.perawatanTubuh[indexNumber]
+            let image = UIImage(named: "\(indexPath.image)")
+            
+            let medicineVC = storyboard?.instantiateViewController(identifier: "medicineViewController") as! MedicineViewController
+            medicineVC.title = indexPath.name
+            medicineVC.medicineImageViewData = image
+            medicineVC.apotechLabelData = indexPath.apotek
+            medicineVC.medicineSummaryData = indexPath.medicineSummary
+            medicineVC.priceLabelData = indexPath.price
+            medicineVC.medicineDescriptionData = indexPath.description
+            medicineVC.imageString = indexPath.image
+            self.navigationController?.pushViewController(medicineVC, animated: true)
+            
+        case "Contact Lens":
+            let indexPath = categoryModel.alatKesehatan[indexNumber]
+            let image = UIImage(named: "\(indexPath.image)")
+            
+            let medicineVC = storyboard?.instantiateViewController(identifier: "medicineViewController") as! MedicineViewController
+            medicineVC.title = indexPath.name
+            medicineVC.medicineImageViewData = image
+            medicineVC.apotechLabelData = indexPath.apotek
+            medicineVC.medicineSummaryData = indexPath.medicineSummary
+            medicineVC.priceLabelData = indexPath.price
+            medicineVC.medicineDescriptionData = indexPath.description
+            medicineVC.imageString = indexPath.image
+            self.navigationController?.pushViewController(medicineVC, animated: true)
+            
+        case "Glass":
+            let indexPath = categoryModel.alatKesehatan[indexNumber]
+            let image = UIImage(named: "\(indexPath.image)")
+            
+            let medicineVC = storyboard?.instantiateViewController(identifier: "medicineViewController") as! MedicineViewController
+            medicineVC.title = indexPath.name
+            medicineVC.medicineImageViewData = image
+            medicineVC.apotechLabelData = indexPath.apotek
+            medicineVC.medicineSummaryData = indexPath.medicineSummary
+            medicineVC.priceLabelData = indexPath.price
+            medicineVC.medicineDescriptionData = indexPath.description
+            medicineVC.imageString = indexPath.image
+            self.navigationController?.pushViewController(medicineVC, animated: true)
+            
+        case "Mask":
+            let indexPath = categoryModel.alatKesehatan[indexNumber]
+            let image = UIImage(named: "\(indexPath.image)")
+            
+            let medicineVC = storyboard?.instantiateViewController(identifier: "medicineViewController") as! MedicineViewController
+            medicineVC.title = indexPath.name
+            medicineVC.medicineImageViewData = image
+            medicineVC.apotechLabelData = indexPath.apotek
+            medicineVC.medicineSummaryData = indexPath.medicineSummary
+            medicineVC.priceLabelData = indexPath.price
+            medicineVC.medicineDescriptionData = indexPath.description
+            medicineVC.imageString = indexPath.image
+            self.navigationController?.pushViewController(medicineVC, animated: true)
+            
+        case "Glove":
+            let indexPath = categoryModel.alatKesehatan[indexNumber]
+            let image = UIImage(named: "\(indexPath.image)")
+            
+            let medicineVC = storyboard?.instantiateViewController(identifier: "medicineViewController") as! MedicineViewController
+            medicineVC.title = indexPath.name
+            medicineVC.medicineImageViewData = image
+            medicineVC.apotechLabelData = indexPath.apotek
+            medicineVC.medicineSummaryData = indexPath.medicineSummary
+            medicineVC.priceLabelData = indexPath.price
+            medicineVC.medicineDescriptionData = indexPath.description
+            medicineVC.imageString = indexPath.image
+            self.navigationController?.pushViewController(medicineVC, animated: true)
+            
+        case "Senter":
+            let indexPath = categoryModel.alatNonMedis[indexNumber]
+            let image = UIImage(named: "\(indexPath.image)")
+            
+            let medicineVC = storyboard?.instantiateViewController(identifier: "medicineViewController") as! MedicineViewController
+            medicineVC.title = indexPath.name
+            medicineVC.medicineImageViewData = image
+            medicineVC.apotechLabelData = indexPath.apotek
+            medicineVC.medicineSummaryData = indexPath.medicineSummary
+            medicineVC.priceLabelData = indexPath.price
+            medicineVC.medicineDescriptionData = indexPath.description
+            medicineVC.imageString = indexPath.image
+            self.navigationController?.pushViewController(medicineVC, animated: true)
+            
+        case "Timbangan":
+            let indexPath = categoryModel.alatNonMedis[indexNumber]
+            let image = UIImage(named: "\(indexPath.image)")
+            
+            let medicineVC = storyboard?.instantiateViewController(identifier: "medicineViewController") as! MedicineViewController
+            medicineVC.title = indexPath.name
+            medicineVC.medicineImageViewData = image
+            medicineVC.apotechLabelData = indexPath.apotek
+            medicineVC.medicineSummaryData = indexPath.medicineSummary
+            medicineVC.priceLabelData = indexPath.price
+            medicineVC.medicineDescriptionData = indexPath.description
+            medicineVC.imageString = indexPath.image
+            self.navigationController?.pushViewController(medicineVC, animated: true)
+            
+        case "Bantal":
+            let indexPath = categoryModel.alatNonMedis[indexNumber]
+            let image = UIImage(named: "\(indexPath.image)")
+            
+            let medicineVC = storyboard?.instantiateViewController(identifier: "medicineViewController") as! MedicineViewController
+            medicineVC.title = indexPath.name
+            medicineVC.medicineImageViewData = image
+            medicineVC.apotechLabelData = indexPath.apotek
+            medicineVC.medicineSummaryData = indexPath.medicineSummary
+            medicineVC.priceLabelData = indexPath.price
+            medicineVC.medicineDescriptionData = indexPath.description
+            medicineVC.imageString = indexPath.image
+            self.navigationController?.pushViewController(medicineVC, animated: true)
+            
+        case "Box Bayi":
+            let indexPath = categoryModel.alatNonMedis[indexNumber]
+            let image = UIImage(named: "\(indexPath.image)")
+            
+            let medicineVC = storyboard?.instantiateViewController(identifier: "medicineViewController") as! MedicineViewController
+            medicineVC.title = indexPath.name
+            medicineVC.medicineImageViewData = image
+            medicineVC.apotechLabelData = indexPath.apotek
+            medicineVC.medicineSummaryData = indexPath.medicineSummary
+            medicineVC.priceLabelData = indexPath.price
+            medicineVC.medicineDescriptionData = indexPath.description
+            medicineVC.imageString = indexPath.image
+            self.navigationController?.pushViewController(medicineVC, animated: true)
+            
+        case "Bedak":
+            let indexPath = categoryModel.bayi[indexNumber]
+            let image = UIImage(named: "\(indexPath.image)")
+            
+            let medicineVC = storyboard?.instantiateViewController(identifier: "medicineViewController") as! MedicineViewController
+            medicineVC.title = indexPath.name
+            medicineVC.medicineImageViewData = image
+            medicineVC.apotechLabelData = indexPath.apotek
+            medicineVC.medicineSummaryData = indexPath.medicineSummary
+            medicineVC.priceLabelData = indexPath.price
+            medicineVC.medicineDescriptionData = indexPath.description
+            medicineVC.imageString = indexPath.image
+            self.navigationController?.pushViewController(medicineVC, animated: true)
+            
+        case "Popok":
+            let indexPath = categoryModel.bayi[indexNumber]
+            let image = UIImage(named: "\(indexPath.image)")
+            
+            let medicineVC = storyboard?.instantiateViewController(identifier: "medicineViewController") as! MedicineViewController
+            medicineVC.title = indexPath.name
+            medicineVC.medicineImageViewData = image
+            medicineVC.apotechLabelData = indexPath.apotek
+            medicineVC.medicineSummaryData = indexPath.medicineSummary
+            medicineVC.priceLabelData = indexPath.price
+            medicineVC.medicineDescriptionData = indexPath.description
+            medicineVC.imageString = indexPath.image
+            self.navigationController?.pushViewController(medicineVC, animated: true)
+            
+        case "Botol":
+            let indexPath = categoryModel.bayi[indexNumber]
+            let image = UIImage(named: "\(indexPath.image)")
+            
+            let medicineVC = storyboard?.instantiateViewController(identifier: "medicineViewController") as! MedicineViewController
+            medicineVC.title = indexPath.name
+            medicineVC.medicineImageViewData = image
+            medicineVC.apotechLabelData = indexPath.apotek
+            medicineVC.medicineSummaryData = indexPath.medicineSummary
+            medicineVC.priceLabelData = indexPath.price
+            medicineVC.medicineDescriptionData = indexPath.description
+            medicineVC.imageString = indexPath.image
+            self.navigationController?.pushViewController(medicineVC, animated: true)
+            
+        case "Termometer":
+            let indexPath = categoryModel.bayi[indexNumber]
+            let image = UIImage(named: "\(indexPath.image)")
+            
+            let medicineVC = storyboard?.instantiateViewController(identifier: "medicineViewController") as! MedicineViewController
+            medicineVC.title = indexPath.name
+            medicineVC.medicineImageViewData = image
+            medicineVC.apotechLabelData = indexPath.apotek
+            medicineVC.medicineSummaryData = indexPath.medicineSummary
+            medicineVC.priceLabelData = indexPath.price
+            medicineVC.medicineDescriptionData = indexPath.description
+            medicineVC.imageString = indexPath.image
+            self.navigationController?.pushViewController(medicineVC, animated: true)
+            
+        case "Penyangga Tangan":
+            let indexPath = categoryModel.lainLain[indexNumber]
+            let image = UIImage(named: "\(indexPath.image)")
+            
+            let medicineVC = storyboard?.instantiateViewController(identifier: "medicineViewController") as! MedicineViewController
+            medicineVC.title = indexPath.name
+            medicineVC.medicineImageViewData = image
+            medicineVC.apotechLabelData = indexPath.apotek
+            medicineVC.medicineSummaryData = indexPath.medicineSummary
+            medicineVC.priceLabelData = indexPath.price
+            medicineVC.medicineDescriptionData = indexPath.description
+            medicineVC.imageString = indexPath.image
+            self.navigationController?.pushViewController(medicineVC, animated: true)
+            
+        case "Tongkat":
+            let indexPath = categoryModel.lainLain[indexNumber]
+            let image = UIImage(named: "\(indexPath.image)")
+            
+            let medicineVC = storyboard?.instantiateViewController(identifier: "medicineViewController") as! MedicineViewController
+            medicineVC.title = indexPath.name
+            medicineVC.medicineImageViewData = image
+            medicineVC.apotechLabelData = indexPath.apotek
+            medicineVC.medicineSummaryData = indexPath.medicineSummary
+            medicineVC.priceLabelData = indexPath.price
+            medicineVC.medicineDescriptionData = indexPath.description
+            medicineVC.imageString = indexPath.image
+            self.navigationController?.pushViewController(medicineVC, animated: true)
+            
+        case "Power Tone":
+            let indexPath = categoryModel.lainLain[indexNumber]
+            let image = UIImage(named: "\(indexPath.image)")
+            
+            let medicineVC = storyboard?.instantiateViewController(identifier: "medicineViewController") as! MedicineViewController
+            medicineVC.title = indexPath.name
+            medicineVC.medicineImageViewData = image
+            medicineVC.apotechLabelData = indexPath.apotek
+            medicineVC.medicineSummaryData = indexPath.medicineSummary
+            medicineVC.priceLabelData = indexPath.price
+            medicineVC.medicineDescriptionData = indexPath.description
+            medicineVC.imageString = indexPath.image
+            self.navigationController?.pushViewController(medicineVC, animated: true)
+            
+        case "Nebulizer":
+            let indexPath = categoryModel.lainLain[indexNumber]
+            let image = UIImage(named: "\(indexPath.image)")
+            
+            let medicineVC = storyboard?.instantiateViewController(identifier: "medicineViewController") as! MedicineViewController
+            medicineVC.title = indexPath.name
+            medicineVC.medicineImageViewData = image
+            medicineVC.apotechLabelData = indexPath.apotek
+            medicineVC.medicineSummaryData = indexPath.medicineSummary
+            medicineVC.priceLabelData = indexPath.price
+            medicineVC.medicineDescriptionData = indexPath.description
+            medicineVC.imageString = indexPath.image
+            self.navigationController?.pushViewController(medicineVC, animated: true)
+            
+        default:
+            print("Default Item")
+        }
+    }
     
     
 }
