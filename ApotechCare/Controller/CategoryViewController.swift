@@ -13,6 +13,7 @@ class CategoryViewController: UIViewController {
     var categoryModel = CategoryModel()
     
     var index: Int?
+    var itemName = [String]()
     
     @IBOutlet weak var collectionOne: UICollectionView!
     @IBOutlet weak var collectionTwo: UICollectionView!
@@ -23,6 +24,7 @@ class CategoryViewController: UIViewController {
         
         
         print(index!)
+        print(itemName)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -74,7 +76,7 @@ extension CategoryViewController: UICollectionViewDelegate, UICollectionViewData
         switch index! {
         case 0:
             if collectionView == self.collectionOne {
-                let cellOne = collectionView.dequeueReusableCell(withReuseIdentifier: "vitaminIdentifierOne", for: indexPath) as! CategoryCell
+                let cellOne = collectionView.dequeueReusableCell(withReuseIdentifier: "categoryIdentifierOne", for: indexPath) as! CategoryCell
                 
                 
                 let index = categoryModel.favorite[indexPath.row] // 4 data -0-3
@@ -87,7 +89,7 @@ extension CategoryViewController: UICollectionViewDelegate, UICollectionViewData
             }
             
             if collectionView == self.collectionTwo {
-                let cellTwo = collectionView.dequeueReusableCell(withReuseIdentifier: "vitaminIdentifierTwo", for: indexPath) as! CategoryCell
+                let cellTwo = collectionView.dequeueReusableCell(withReuseIdentifier: "categoryIdentifierTwo", for: indexPath) as! CategoryCell
                 
                 let index = categoryModel.favorite[indexPath.row + 2]
                 let image = UIImage(named: "\(index.image)")
@@ -101,7 +103,7 @@ extension CategoryViewController: UICollectionViewDelegate, UICollectionViewData
             
         case 1:
             if collectionView == self.collectionOne {
-                let cellOne = collectionView.dequeueReusableCell(withReuseIdentifier: "vitaminIdentifierOne", for: indexPath) as! CategoryCell
+                let cellOne = collectionView.dequeueReusableCell(withReuseIdentifier: "categoryIdentifierOne", for: indexPath) as! CategoryCell
                 
                 let index = categoryModel.vitamin[indexPath.row] // 4 data -0-3
                 let image = UIImage(named: "\(index.image)")
@@ -113,7 +115,7 @@ extension CategoryViewController: UICollectionViewDelegate, UICollectionViewData
             }
             
             if collectionView == self.collectionTwo {
-                let cellTwo = collectionView.dequeueReusableCell(withReuseIdentifier: "vitaminIdentifierTwo", for: indexPath) as! CategoryCell
+                let cellTwo = collectionView.dequeueReusableCell(withReuseIdentifier: "categoryIdentifierTwo", for: indexPath) as! CategoryCell
                 let index = categoryModel.vitamin[indexPath.row + 2]
                 let image = UIImage(named: "\(index.image)")
                 
@@ -126,7 +128,7 @@ extension CategoryViewController: UICollectionViewDelegate, UICollectionViewData
             
         case 2:
             if collectionView == self.collectionOne {
-                let cellOne = collectionView.dequeueReusableCell(withReuseIdentifier: "vitaminIdentifierOne", for: indexPath) as! CategoryCell
+                let cellOne = collectionView.dequeueReusableCell(withReuseIdentifier: "categoryIdentifierOne", for: indexPath) as! CategoryCell
                 
                 let index = categoryModel.perawatanWajah[indexPath.row] // 4 data -0-3
                 let image = UIImage(named: "\(index.image)")
@@ -138,7 +140,7 @@ extension CategoryViewController: UICollectionViewDelegate, UICollectionViewData
             }
             
             if collectionView == self.collectionTwo {
-                let cellTwo = collectionView.dequeueReusableCell(withReuseIdentifier: "vitaminIdentifierTwo", for: indexPath) as! CategoryCell
+                let cellTwo = collectionView.dequeueReusableCell(withReuseIdentifier: "categoryIdentifierTwo", for: indexPath) as! CategoryCell
                 let index = categoryModel.perawatanWajah[indexPath.row + 2]
                 let image = UIImage(named: "\(index.image)")
                 
@@ -151,7 +153,7 @@ extension CategoryViewController: UICollectionViewDelegate, UICollectionViewData
             
         case 3:
             if collectionView == self.collectionOne {
-                let cellOne = collectionView.dequeueReusableCell(withReuseIdentifier: "vitaminIdentifierOne", for: indexPath) as! CategoryCell
+                let cellOne = collectionView.dequeueReusableCell(withReuseIdentifier: "categoryIdentifierOne", for: indexPath) as! CategoryCell
                 
                 let index = categoryModel.perawatanTubuh[indexPath.row] // 4 data -0-3
                 let image = UIImage(named: "\(index.image)")
@@ -163,7 +165,7 @@ extension CategoryViewController: UICollectionViewDelegate, UICollectionViewData
             }
             
             if collectionView == self.collectionTwo {
-                let cellTwo = collectionView.dequeueReusableCell(withReuseIdentifier: "vitaminIdentifierTwo", for: indexPath) as! CategoryCell
+                let cellTwo = collectionView.dequeueReusableCell(withReuseIdentifier: "categoryIdentifierTwo", for: indexPath) as! CategoryCell
                 let index = categoryModel.perawatanTubuh[indexPath.row + 2]
                 let image = UIImage(named: "\(index.image)")
                 
@@ -176,7 +178,7 @@ extension CategoryViewController: UICollectionViewDelegate, UICollectionViewData
             
         case 4:
             if collectionView == self.collectionOne {
-                let cellOne = collectionView.dequeueReusableCell(withReuseIdentifier: "vitaminIdentifierOne", for: indexPath) as! CategoryCell
+                let cellOne = collectionView.dequeueReusableCell(withReuseIdentifier: "categoryIdentifierOne", for: indexPath) as! CategoryCell
                 
                 let index = categoryModel.alatKesehatan[indexPath.row] // 4 data -0-3
                 let image = UIImage(named: "\(index.image)")
@@ -188,7 +190,7 @@ extension CategoryViewController: UICollectionViewDelegate, UICollectionViewData
             }
             
             if collectionView == self.collectionTwo {
-                let cellTwo = collectionView.dequeueReusableCell(withReuseIdentifier: "vitaminIdentifierTwo", for: indexPath) as! CategoryCell
+                let cellTwo = collectionView.dequeueReusableCell(withReuseIdentifier: "categoryIdentifierTwo", for: indexPath) as! CategoryCell
                 let index = categoryModel.alatKesehatan[indexPath.row + 2]
                 let image = UIImage(named: "\(index.image)")
                 
@@ -201,7 +203,7 @@ extension CategoryViewController: UICollectionViewDelegate, UICollectionViewData
             
         case 5:
             if collectionView == self.collectionOne {
-                let cellOne = collectionView.dequeueReusableCell(withReuseIdentifier: "vitaminIdentifierOne", for: indexPath) as! CategoryCell
+                let cellOne = collectionView.dequeueReusableCell(withReuseIdentifier: "categoryIdentifierOne", for: indexPath) as! CategoryCell
                 
                 let index = categoryModel.alatNonMedis[indexPath.row] // 4 data -0-3
                 let image = UIImage(named: "\(index.image)")
@@ -213,7 +215,7 @@ extension CategoryViewController: UICollectionViewDelegate, UICollectionViewData
             }
             
             if collectionView == self.collectionTwo {
-                let cellTwo = collectionView.dequeueReusableCell(withReuseIdentifier: "vitaminIdentifierTwo", for: indexPath) as! CategoryCell
+                let cellTwo = collectionView.dequeueReusableCell(withReuseIdentifier: "categoryIdentifierTwo", for: indexPath) as! CategoryCell
                 let index = categoryModel.alatNonMedis[indexPath.row + 2]
                 let image = UIImage(named: "\(index.image)")
                 
@@ -226,7 +228,7 @@ extension CategoryViewController: UICollectionViewDelegate, UICollectionViewData
             
         case 6:
             if collectionView == self.collectionOne {
-                let cellOne = collectionView.dequeueReusableCell(withReuseIdentifier: "vitaminIdentifierOne", for: indexPath) as! CategoryCell
+                let cellOne = collectionView.dequeueReusableCell(withReuseIdentifier: "categoryIdentifierOne", for: indexPath) as! CategoryCell
                 
                 let index = categoryModel.alatKontrasepsi[indexPath.row] // 4 data -0-3
                 let image = UIImage(named: "\(index.image)")
@@ -238,7 +240,7 @@ extension CategoryViewController: UICollectionViewDelegate, UICollectionViewData
             }
             
             if collectionView == self.collectionTwo {
-                let cellTwo = collectionView.dequeueReusableCell(withReuseIdentifier: "vitaminIdentifierTwo", for: indexPath) as! CategoryCell
+                let cellTwo = collectionView.dequeueReusableCell(withReuseIdentifier: "categoryIdentifierTwo", for: indexPath) as! CategoryCell
                 let index = categoryModel.alatKontrasepsi[indexPath.row + 2]
                 let image = UIImage(named: "\(index.image)")
                 
@@ -251,9 +253,9 @@ extension CategoryViewController: UICollectionViewDelegate, UICollectionViewData
             
         case 7:
             if collectionView == self.collectionOne {
-                let cellOne = collectionView.dequeueReusableCell(withReuseIdentifier: "vitaminIdentifierOne", for: indexPath) as! CategoryCell
+                let cellOne = collectionView.dequeueReusableCell(withReuseIdentifier: "categoryIdentifierOne", for: indexPath) as! CategoryCell
                 
-                let index = categoryModel.alatKesehatan[indexPath.row] // 4 data -0-3
+                let index = categoryModel.bayi[indexPath.row] // 4 data -0-3
                 let image = UIImage(named: "\(index.image)")
                 
                 cellOne.imageView.image = image
@@ -263,8 +265,8 @@ extension CategoryViewController: UICollectionViewDelegate, UICollectionViewData
             }
             
             if collectionView == self.collectionTwo {
-                let cellTwo = collectionView.dequeueReusableCell(withReuseIdentifier: "vitaminIdentifierTwo", for: indexPath) as! CategoryCell
-                let index = categoryModel.alatKesehatan[indexPath.row + 2]
+                let cellTwo = collectionView.dequeueReusableCell(withReuseIdentifier: "categoryIdentifierTwo", for: indexPath) as! CategoryCell
+                let index = categoryModel.bayi[indexPath.row + 2]
                 let image = UIImage(named: "\(index.image)")
                 
                 cellTwo.imageView.image = image
@@ -276,7 +278,7 @@ extension CategoryViewController: UICollectionViewDelegate, UICollectionViewData
             
         case 8:
             if collectionView == self.collectionOne {
-                let cellOne = collectionView.dequeueReusableCell(withReuseIdentifier: "vitaminIdentifierOne", for: indexPath) as! CategoryCell
+                let cellOne = collectionView.dequeueReusableCell(withReuseIdentifier: "categoryIdentifierOne", for: indexPath) as! CategoryCell
                 
                 let index = categoryModel.lainLain[indexPath.row] // 4 data -0-3
                 let image = UIImage(named: "\(index.image)")
@@ -288,7 +290,7 @@ extension CategoryViewController: UICollectionViewDelegate, UICollectionViewData
             }
             
             if collectionView == self.collectionTwo {
-                let cellTwo = collectionView.dequeueReusableCell(withReuseIdentifier: "vitaminIdentifierTwo", for: indexPath) as! CategoryCell
+                let cellTwo = collectionView.dequeueReusableCell(withReuseIdentifier: "categoryIdentifierTwo", for: indexPath) as! CategoryCell
                 let index = categoryModel.lainLain[indexPath.row + 2]
                 let image = UIImage(named: "\(index.image)")
                 
@@ -305,6 +307,23 @@ extension CategoryViewController: UICollectionViewDelegate, UICollectionViewData
         }
         
         return UICollectionViewCell()
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        if collectionView == self.collectionOne {
+            print("1")
+        }
+        
+        if collectionView == self.collectionTwo {
+            print("2")
+        }
+//        switch itemName {
+//        case "":
+//            <#code#>
+//        default:
+//            <#code#>
+//        }
     }
     
     

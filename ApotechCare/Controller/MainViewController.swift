@@ -18,12 +18,17 @@ class MainViewController: UIViewController {
     
     let medicineModel = MedicineModel()
     let categoryModel = CategoryModel()
+    let itemArray = ItemArray()
     
     var indexPathCollection: Int = 0
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        title = "Apotech Care"
+        
+        
         
     }
     
@@ -207,7 +212,16 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
         
         if collectionView == self.categoryThreeCollectionView {
             
-    
+            switch indexPath.row + 6 {
+            case 6:
+                performScreenPresentationOne(index: indexPath.row + 6)
+            case 7:
+                performScreenPresentationOne(index: indexPath.row + 6)
+            case 8:
+                performScreenPresentationOne(index: indexPath.row + 6)
+            default:
+            print("Default Item")
+            }
             
         }
         
@@ -219,27 +233,27 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
         
         switch index {
         case 0:
-            prepareData(index)
+            prepareDataToMedicine(index)
         case 1:
-            prepareData(index)
+            prepareDataToMedicine(index)
         case 2:
-            prepareData(index)
+            prepareDataToMedicine(index)
         case 3:
-            prepareData(index)
+            prepareDataToMedicine(index)
         case 4:
-            prepareData(index)
+            prepareDataToMedicine(index)
         case 5:
-            prepareData(index)
+            prepareDataToMedicine(index)
         case 6:
-            prepareData(index)
+            prepareDataToMedicine(index)
         case 7:
-            prepareData(index)
+            prepareDataToMedicine(index)
         case 8:
-            prepareData(index)
+            prepareDataToMedicine(index)
         case 9:
-            prepareData(index)
+            prepareDataToMedicine(index)
         case 10:
-            prepareData(index)
+            prepareDataToMedicine(index)
         default:
             print("Default Item")
         }
@@ -251,17 +265,23 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
     func performScreenPresentationOne(index: Int) {
         switch index {
         case 0:
-            prepareDataOne(index, categoryName: "Favorite")
+            prepareDataToCategory(index, categoryName: "Favorite")
         case 1:
-            prepareDataOne(index, categoryName: "Vitamin")
+            prepareDataToCategory(index, categoryName: "Vitamin")
         case 2:
-            prepareDataOne(index, categoryName: "Perawatan Wajah")
+            prepareDataToCategory(index, categoryName: "Perawatan Wajah")
         case 3:
-            prepareDataOne(index, categoryName: "Perawatan Tubuh")
+            prepareDataToCategory(index, categoryName: "Perawatan Tubuh")
         case 4:
-            prepareDataOne(index, categoryName: "Alat Kesehatan")
+            prepareDataToCategory(index, categoryName: "Alat Kesehatan")
         case 5:
-            prepareDataOne(index, categoryName: "Alat Non Medis")
+            prepareDataToCategory(index, categoryName: "Alat Non Medis")
+        case 6:
+            prepareDataToCategory(index, categoryName: "Alat Kontrasepsi")
+        case 7:
+            prepareDataToCategory(index, categoryName: "Bayi")
+        case 8:
+            prepareDataToCategory(index, categoryName: "Lain-lain")
             
         
         default:
@@ -269,7 +289,7 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
         }
     }
     
-    func prepareData(_ index : Int) {
+    func prepareDataToMedicine(_ index : Int) {
         let indexPath = medicineModel.medicine[index]
         let image = UIImage(named: "\(indexPath.image)")
         
@@ -285,9 +305,31 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
     }
     
     
-    func prepareDataOne(_ index : Int, categoryName: String) {
+    func prepareDataToCategory(_ index : Int, categoryName: String) {
         let categoryVC = storyboard?.instantiateViewController(identifier: "categoryViewController") as! CategoryViewController
         categoryVC.index = index
+        switch categoryName {
+        case "Favorite":
+            categoryVC.itemName = itemArray.favorite
+        case "Vitamin":
+            categoryVC.itemName = itemArray.vitamin
+        case "Perawatan Wajah":
+            categoryVC.itemName = itemArray.perawatanWajah
+        case "Perawatan Tubuh":
+            categoryVC.itemName = itemArray.perawatanTubuh
+        case "Alat Kesehatan":
+            categoryVC.itemName = itemArray.alatKesehatan
+        case "Alat Non Medis":
+            categoryVC.itemName = itemArray.alatNonMedis
+        case "Alat Kontrasepsi":
+            categoryVC.itemName = itemArray.alatKontrasepsi
+        case "Bayi":
+            categoryVC.itemName = itemArray.bayi
+        case "Lain-lain":
+            categoryVC.itemName = itemArray.lainLain
+        default:
+            print("Default item of prepareDataToCategory")
+        }
         categoryVC.title = categoryName
         self.navigationController?.pushViewController(categoryVC, animated: true)
     }

@@ -15,6 +15,9 @@ class MedicineViewController: UIViewController {
     // Database Property
     let realm = try! Realm()
     
+    // Receive data from category
+    var itemName: String?
+    
     
     // Variable
     var imageString: String = ""

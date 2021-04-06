@@ -19,7 +19,7 @@ class CategoryModel {
         Category(image: "medical", name: "Alat Kesehatan"),
         Category(image: "medicalRecord", name: "Alat Non Medis"),
         Category(image: "contraseptive", name: "Alat Kontrasepsi"),
-        Category(image: "baby", name: "Alat Kesehatan"),
+        Category(image: "baby", name: "Bayi"),
         Category(image: "toddler", name: "Lain-lain"),
         
     ]
@@ -78,10 +78,10 @@ class CategoryModel {
     // MARK: - ALAT NON MEDIS
     let alatNonMedis: [Category] = [
         
-        Category(image: "contraseptiveOne", name: "KB Spiral"),
-        Category(image: "contraseptiveTwo", name: "Vitamin B"),
-        Category(image: "contraseptiveThree", name: ""),
-        Category(image: "contraseptiveFour", name: "Condom")
+        Category(image: "nonMedisOne", name: "Senter"),
+        Category(image: "nonMedisTwo", name: "Timbangan"),
+        Category(image: "nonMedisThree", name: "Bantal"),
+        Category(image: "nonMedisFour", name: "Box Bayi")
         
     ]
     
@@ -98,20 +98,20 @@ class CategoryModel {
     // MARK: - BAYI
     let bayi: [Category] = [
         
-        Category(image: "vitaminOne", name: "Vitamin A"),
-        Category(image: "vitaminTwo", name: "Vitamin B"),
-        Category(image: "vitaminThree", name: "Vitamin C"),
-        Category(image: "vitaminFour", name: "Vitamin D")
+        Category(image: "babyOne", name: "Bedak"),
+        Category(image: "babyTwo", name: "Popok"),
+        Category(image: "babyThree", name: "Botol"),
+        Category(image: "babyFour", name: "Termometer")
         
     ]
     
     // MARK: - LAIN-LAIN
     let lainLain: [Category] = [
         
-        Category(image: "vitaminOne", name: "Vitamin A"),
-        Category(image: "vitaminTwo", name: "Vitamin B"),
-        Category(image: "vitaminThree", name: "Vitamin C"),
-        Category(image: "vitaminFour", name: "Vitamin D")
+        Category(image: "lainLainOne", name: "Penyangga Tangan"),
+        Category(image: "lainLainTwo", name: "Tongkat"),
+        Category(image: "lainLainThree", name: "Power Tone"),
+        Category(image: "lainLainFour", name: "Nebulizer")
         
     ]
     
